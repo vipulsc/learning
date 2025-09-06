@@ -13,6 +13,22 @@ setTimeout(() => {
   }, 2000);
 }, 1000);
 
+//callback functions
+function check(a, b, func) {
+  let ans = func(a, b);
+  console.log(ans);
+}
+
+function sum(a, b) {
+  return a + b;
+}
+
+function mul(a, b) {
+  return a * b;
+}
+
+check(2, 4, sum);
+
 //Promise--solution for callback hell
 function check(msg, ms) {
   return new Promise((resolve, reject) => {
